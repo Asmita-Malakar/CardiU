@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="bmi.css">
+		<link rel="stylesheet" href="styles.css">
+		<script type="module" src="bmicalc.js"></script>
+		<script type="module" src="script.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
+	</head>
+	<nav class="navbar bg-dark navbar-expand-lg">
+	 	<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+				{{#private}}
+					<a href='account'>
+					<img src='{{avatar}}'>
+					</a>
+				{{/private}}
+			</li>
+			<li class="nav-item">
+				{{#private}}
+					<a onclick='logout()'>Logout</a>
+				{{/private}}
+			</li>
+			<!--<li class="nav-item">-->
+			<!--	<a class="nav-link" href="\~\cardiU\bmi">BMI Calculation</a>-->
+			<!--</li>-->
+			<li class="nav-item">
+						<a class="nav-link" href="\~\cardiU\diet">Diet Plan</a>
+			</li>
+			<li class="nav-item">
+						<a class="nav-link" href="\~\cardiU\plans">Choose Plan</a>
+			</li>
+			</ul>
+		</div>	
+	</nav>
+	<body style="background-color:#bef3f3">
+		<div class="bmi-container">
+		    <h1>BMI Calculator</h1>
+		
+		    <!-- Option for providing height 
+		        and weight to the user-->
+		    <p>Height (in cm)</p>
+		
+		    <input type="text" id="height">
+		
+		    <p>Weight (in kg)</p>
+		
+		    <input type="text" id="weight">
+		
+		    <button onclick="onload()" id="bmibtn">Calculate</button>
+		
+		    <div id="result"></div>
+		    <p>
+			Check out some healthy and delicious options in the diet section!
+			</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="endurancePlan.css">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="script.js"></script>
+  <script type="text/javascript" src="endurance.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
+  <title>Training Plan Outline</title>
+</head>
+<body style="background-color:#bef3f3">
+ <nav class="navbar bg-dark navbar-expand-lg">
+ 	<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				{{#private}}
+					<a href='account'>
+					<img src='{{avatar}}'>
+					</a>
+				{{/private}}
+			</li>
+			<li class="nav-item">
+				{{#private}}
+					<a onclick='logout()'>Logout</a>
+				{{/private}}
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="\~\cardiU\bmi">BMI Calculation</a>
+			</li>
+			<li class="nav-item">
+						<a class="nav-link" href="\~\cardiU\diet">Diet Plan</a>
+			</li>
+			<li class="nav-item">
+						<a class="nav-link" href="\~\cardiU\plans">Choose Plan</a>
+			</li>
+		</ul>
+	</div>	
+  </nav>
+  <section class="price-comparison">
+    <div class="price-column">
+      <div class="price-header">
+        <div class="price">
+          <div class="dollar-sign"></div>
+          Easy
+          <div class="per-month"></div>
+        </div>
+        <div class="plan-name">30 MIN</div>
+      </div>
+      <div class="divider"></div>
+      <div class="feature">
+        <img src="https://goodshovel75.qoom.space/cardiU/Images/check-circle.svg" id="imgclick" onclick="changeImage()">
+        5 min walk
+      </div>
+      <div class="feature">
+        <img src="https://goodshovel75.qoom.space/cardiU/Images/check-circle.svg" id="imgclick1" onclick="changeImage()">
+        5 min jog
+      </div>
+      <div class="feature ">
+        <img src="https://goodshovel75.qoom.space/cardiU/Images/check-circle.svg" id="imgclick2" onclick="changeImage()">
+        5 min Jumping Jacks
+      </div>
+      <div class="feature ">
+        <img src="https://goodshovel75.qoom.space/cardiU/Images/check-circle.svg" id="imgclick3" onclick="changeImage()">
+        5 min Zumba Routine
+      </div>
+      <div class="feature ">
+        <img src="https://goodshovel75.qoom.space/cardiU/Images/check-circle.svg" id="imgclick4" onclick="changeImage()">
+        5 min Lunges
+      </div>
+      <div class="feature ">
+        <img src="https://goodshovel75.qoom.space/cardiU/Images/check-circle.svg" id="imgclick5" onclick="changeImage()">
+        5 min Push Ups 
+      </div> 
+      <form action="https://youtu.be/h4r7mO61pkE">
+  <button href="#videoPopup" class="cta" id="buttonvideo" >View Tutorials</button> </form>
+<!--      <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">-->
+<!--</iframe>-->
+	  <!--<div id="videoPopup" class="mfp-hide embed-responsive embed-responsive-21by9">-->
+   <!--     <iframe class="embed-responsive-item" width="854" height="480" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+   <!--   </div>-->
+    </div>
+    <div class="price-column popular">
+      <div class="most-popular"></div>
+      <div class="price-header">
+        <div class="price">
+          <div class="dollar-sign"></div>
+          Medium
+          <div class="per-month"></div>
+        </div>
+        <div class="plan-name">60 MIN</div>
+      </div>
+      <div class="divider"></div>
+      <div class="feature">
+        <img src="https://goodshovel75.qoom.space/cardiU/Images/check-circle.svg" id="imgclick6" onclick="changeImage()">
+        15 min walk
+      </div>
+      <div class="feature">
+        <img src="https://goodshovel75.qoom.space/cardiU/Images/check-circle.svg" id="imgclick7" onclick="changeImage()">
+        15 min jog
+      </div>
+      <div class="feature">
+        <img src="https://goodshovel75.qoom.space/cardiU/Images/check-circle.svg" id="imgclick8" onclick="changeImage()">
+        10 min Skipping Rope
+      </div>
+      <div class="feature">
+        <img src="https://goodshovel75.qoom.space/cardiU/Images/check-circle.svg" id="imgclick9" onclick="changeImage()">
+        10 min Lunges
+      </div>
+      <div class="feature ">
+        <img src="https://goodshovel75.qoom.space/cardiU/Images/check-circle.svg" id="imgclick10" onclick="changeImage()">
+        5 min Push Ups
+      </div>
+      <div class="feature ">
+        <img src="https://goodshovel75.qoom.space/cardiU/Images/check-circle.svg" id="imgclick11" onclick="changeImage()">
+        5 min Cardio
+      </div> <form action="https://youtu.be/4ywtu07bgAI">
+      <button class="cta" id="cta">View Tutorials</button> </form>
+    </div>
+    <div class="price-column">
+      <div class="price-header">
+        <div class="price">
+          <div class="dollar-sign"></div>
+          Hard
+          <div class="per-month"></div>
+        </div>
+        <div class="plan-name">90 MIN</div>
+      </div>
+      <div class="divider"></div>
+      <div class="feature">
+        <img src="https://goodshovel75.qoom.space/cardiU/Images/check-circle.svg" id="imgclick12" onclick="changeImage()">
+        20 min walk
+      </div>
+      <div class="feature">
+        <img src="https://goodshovel75.qoom.space/cardiU/Images/check-circle.svg" id="imgclick13" onclick="changeImage()">
+        20 min jog
+      </div>
+      <div class="feature">
+        <img src="https://goodshovel75.qoom.space/cardiU/Images/check-circle.svg" id="imgclick14" onclick="changeImage()">
+        15 min Skipping Rope
+      </div>
+      <div class="feature">
+        <img src="https://goodshovel75.qoom.space/cardiU/Images/check-circle.svg" id="imgclick15" onclick="changeImage()">
+        10 min Cardio
+      </div>
+      <div class="feature">
+        <img src="https://goodshovel75.qoom.space/cardiU/Images/check-circle.svg" id="imgclick16" onclick="changeImage()">
+        10 min Push Ups
+      </div>
+      <div class="feature">
+        <img src="https://goodshovel75.qoom.space/cardiU/Images/check-circle.svg" id="imgclick17" onclick="changeImage()">
+        10 min Lunges
+      </div> <form action="https://youtu.be/vrhYYxnulZY">
+      <button class="cta" id="cta">View Tutorials</button> </form>
+	</div>
+	</section>
+ </body>
+ </html>
